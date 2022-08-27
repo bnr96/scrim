@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>ScoreBoard</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="team">
+                <p class = "team-name id="team1">HOME</p>
+                <p class = "scores"  id="home-score">0</p>
+            <div class="point-btns">
+                <button class = "ptn-btn" onclick="HP(1)">+1</button>
+                <button class = "ptn-btn"  onclick="HP(2)">+2</button>
+                <button class = "ptn-btn" onlcick="HP(3)">+3</button>
+            </div>
+        </div>
+            
+         
+            <button class = "reset-btn" id = "reset=btn" onclick="reset()">Reset</button> 
+          
+          <div class = "team">
+             <p class = "team-name" id="team2">Guest</p>
+                <p class = "scores"  id="guest-score">0</p>
+               <div class="point-btns">
+                <button class = "ptn-btn" onclick="GP(1)">+1</button>
+                <button class = "ptn-btn" onclick="GP(2)">+2</button>
+                <button class = "ptn-btn" onclick="GP(3)">+3</button>
+               </div>
+                </div>
+        </div>
+        <p class = "footer">Copied from Rajesh</p>
+        <script src="index.js"></script>
+    </body>
+</html>
